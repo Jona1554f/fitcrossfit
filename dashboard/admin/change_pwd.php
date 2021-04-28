@@ -88,11 +88,7 @@ page_protect();
 
 		<hr />
 
-		
-		
-		
-		
-		
+	
 			<div class="a1-container a1-small a1-padding-32" style="margin-top:2px; margin-bottom:2px;">
         <div class="a1-card-8 a1-light-gray" style="width:500px; margin:0 auto;">
 		<div class="a1-container a1-dark-gray a1-center">
@@ -125,7 +121,8 @@ page_protect();
              <tr>
              <tr>
                <td height="35"></td>
-               <td height="35"><a href="change_pwd.php" class="a1-btn a1-blue">Enviar</a><!--<input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="SUBMIT" >-->
+               <td height="35"><a href="change_pwd.php"> <input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="Enviar" ></a>
+			
                  <input class="a1-btn a1-blue" type="reset" name="reset" id="reset" value="Borrar"></td>
              </tr>
            </table></td>

@@ -56,13 +56,13 @@ page_protect();
 		
 				<div class="row">
 					
-					<!-- Profile Info and Notifications -->
+				
 					<div class="col-md-6 col-sm-8 clearfix">	
 							
 					</div>
 					
 					
-					<!-- Raw Links -->
+				
 					<div class="col-md-6 col-sm-4 clearfix hidden-xs">
 						
 						<ul class="list-inline links-list pull-right">
@@ -87,15 +87,15 @@ page_protect();
 
 		<form>
 	<?php
-	// set start and end year range
+	
 	$yearArray = range(2000, date('Y'));
 	?>
-	<!-- displaying the dropdown list -->
+	
 	<select name="year" id="syear">
 	    <option value="0">Selecciona el año</option>
 	    <?php
 	    foreach ($yearArray as $year) {
-	        // if you want to select a particular year
+	       
 	        $selected = ($year == date('Y')) ? 'selected' : '';
 	        echo '<option '.$selected.' value="'.$year.'">'.$year.'</option>';
 	    }
@@ -103,7 +103,7 @@ page_protect();
 	</select>
 
 	<?php
-	// set the month array
+	
 	$formattedMonthArray = array(
 	                    "01" => "Enero", "02" => "Febrero", "03" => "Marzo", "04" => "Abril",
 	                    "05" => "Mayo", "06" => "Junio", "07" => "Julio", "08" => "Agosto",
@@ -111,17 +111,16 @@ page_protect();
 	                );
 
 	?>
-	<!-- displaying the dropdown list -->
+
 	<select name="month" id="smonth">
 	    <option value="0">Selecciona Mes</option>
 	    <?php
 
 	    foreach ($formattedMonthArray as $month) {
-	        // if you want to select a particular month
+	       
 	        $mm=implode(array_keys($formattedMonthArray,$month));
 	        $selected = ($mm == date('m')) ? 'selected' : '';
-	        // if you want to add extra 0 before the month uncomment the line below
-	        //$month = str_pad($month, 2, "0", STR_PAD_LEFT);
+	      
 	        echo '<option '.$selected.' value="'.$mm.'">'.$month.'</option>';
 	    }
 	    ?>

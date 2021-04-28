@@ -37,9 +37,9 @@ page_protect();
 				</a>
 			</div>
 			
-					<!-- logo collapse icon -->
+					
 					<div class="sidebar-collapse" onclick="collapseSidebar()">
-				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+				<a href="#" class="sidebar-collapse-icon with-animation">
 					<i class="entypo-menu"></i>
 				</a>
 			</div>
@@ -54,13 +54,13 @@ page_protect();
 		
 				<div class="row">
 					
-					<!-- Profile Info and Notifications -->
+					
 					<div class="col-md-6 col-sm-8 clearfix">	
 							
 					</div>
 					
 					
-					<!-- Raw Links -->
+				
 					<div class="col-md-6 col-sm-4 clearfix hidden-xs">
 						
 						<ul class="list-inline links-list pull-right">
@@ -85,15 +85,15 @@ page_protect();
 
 	<form>
 		<?php
-		// set start and end year range
-		$yearArray = range(2000, date('Y'));
+		
+		$yearArray = range(2018, date('Y'));
 		?>
-		<!-- displaying the dropdown list -->
+		
 		<select name="year" id="syear">
 		    <option value="0">Select Year</option>
 		    <?php
 		    foreach ($yearArray as $year) {
-		        // if you want to select a particular year
+		      
 		        $selected = ($year == date('Y')) ? 'selected' : '';
 		        echo '<option '.$selected.' value="'.$year.'">'.$year.'</option>';
 		    }

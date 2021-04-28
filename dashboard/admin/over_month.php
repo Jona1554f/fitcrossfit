@@ -26,7 +26,7 @@ if (mysqli_affected_rows($con) != 0) {
 					<th>Nombre</th>
 					<th>Contacto</th>
 					<th>Género</th>
-					<th>Departamento</th>
+					<th>Calle</th>
 					<th>Ciudad</th>
 					<th>Fecha de Nacimiento</th>
 					<th>Fecha de Ingreso</th>

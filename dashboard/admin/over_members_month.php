@@ -39,7 +39,7 @@ page_protect();
 			
 					<!-- logo collapse icon -->
 					<div class="sidebar-collapse" onclick="collapseSidebar()">
-				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+				<a href="#" class="sidebar-collapse-icon with-animation"><!-- agregue la clase "con animación" si desea que la barra lateral tenga animación durante la transición de expansión / contracción -->
 					<i class="entypo-menu"></i>
 				</a>
 			</div>
@@ -54,13 +54,13 @@ page_protect();
 		
 				<div class="row">
 					
-					<!-- Profile Info and Notifications -->
+					<!-- Información de perfil y notificaciones -->
 					<div class="col-md-6 col-sm-8 clearfix">	
 							
 					</div>
 					
 					
-					<!-- Raw Links -->
+					<!-- Enlaces sin procesar -->
 					<div class="col-md-6 col-sm-4 clearfix hidden-xs">
 						
 						<ul class="list-inline links-list pull-right">
@@ -87,15 +87,15 @@ page_protect();
 
 <form>
 	<?php
-	// set start and end year range
+	// establecer rango de año de inicio y finalización
 	$yearArray = range(2000, date('Y'));
 	?>
-	<!-- displaying the dropdown list -->
+	<!-- mostrando la lista desplegable -->
 	<select name="year" id="syear">
 	    <option value="0">Seleccione el Año</option>
 	    <?php
 	    foreach ($yearArray as $year) {
-	        // if you want to select a particular year
+	     // si desea seleccionar un año en particular
 	        $selected = ($year == date('Y')) ? 'selected' : '';
 	        echo '<option '.$selected.' value="'.$year.'">'.$year.'</option>';
 	    }
@@ -103,7 +103,7 @@ page_protect();
 	</select>
 
 	<?php
-	// set the month array
+	// establece la matriz del mes
 	$formattedMonthArray = array(
 	                    "01" => "Enero", "02" => "Febrero", "03" => "Marzo", "04" => "Abril",
 	                    "05" => "Mayo", "06" => "Junio", "07" => "Julio", "08" => "Agosto",
@@ -111,17 +111,17 @@ page_protect();
 	                );
 
 	?>
-	<!-- displaying the dropdown list -->
+	<!-- mostrando la lista desplegable -->
 	<select name="month" id="smonth">
 	    <option value="0">Selecciona Mes</option>
 	    <?php
 
 	    foreach ($formattedMonthArray as $month) {
-	        // if you want to select a particular month
+	        // si desea seleccionar un mes en particular
 	        $mm=implode(array_keys($formattedMonthArray,$month));
 	        $selected = ($mm == date('m')) ? 'selected' : '';
-	        // if you want to add extra 0 before the month uncomment the line below
-	        //$month = str_pad($month, 2, "0", STR_PAD_LEFT);
+	       // si desea agregar 0 extra antes del mes, descomente la línea de abajo
+		   // $ mes = str_pad ($ mes, 2, "0", STR_PAD_LEFT);
 	        echo '<option '.$selected.' value="'.$mm.'">'.$month.'</option>';
 	    }
 	    ?>

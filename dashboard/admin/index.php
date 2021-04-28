@@ -7,7 +7,7 @@ page_protect();
 <head> 
 
     
-    <title>ConfiguroWeb GYM | Panel de Control </title>
+    <title>ConfiguroWeb Crossfit | Panel de Control </title>
 
     <link rel="stylesheet" href="../../css/style.css"  id="style-resource-5">
     <script type="text/javascript" src="../../js/Script.js"></script>
@@ -31,13 +31,13 @@ page_protect();
 			<header class="logo-env">
 			
 			<!-- logo -->
-			<div class="logo">
+			<div class="logo"> 
 				<a href="main.php">
 					<img src="../../images/logo.png" alt="" width="192" height="80" />
 				</a>
 			</div>
 			
-					<!-- logo colapsar ícono -->
+				
 					<div class="sidebar-collapse" onclick="collapseSidebar()">
 				<a href="#" class="sidebar-collapse-icon with-animation"><!-- agregue la clase "with-animation" si desea que la barra lateral tenga animación durante la transición de expansión / colapso -->
 					<i class="entypo-menu"></i>
@@ -79,7 +79,7 @@ page_protect();
 					
 				</div>
 
-			<h2>ConfiguroWeb GYM | Panel de Control</h2>
+			<h2>ConfiguroWeb Crossfit | Panel de Control</h2>
 
 			<hr>
 
@@ -89,7 +89,7 @@ page_protect();
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
 						<h2>Dinero recibido este Mes</h2><br>	
 						<?php
-							date_default_timezone_set('America/Bogota');
+							date_default_timezone_set('America/Bogota'); 
 							$date  = date('Y-m');
 							$query = "select * from enrolls_to WHERE  paid_date LIKE '$date%'";
 
@@ -138,7 +138,7 @@ page_protect();
 				<div class="tile-stats tile-aqua">
 					<div class="icon"><i class="entypo-mail"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
-						<h2>Usuarios Ingresados este mes</h2><br>	
+						<h2>Usuarios Ingresados, mes</h2><br>	
 							<?php
 							date_default_timezone_set("America/Bogota"); 
 							$date  = date('Y-m');
@@ -180,9 +180,8 @@ page_protect();
 				</div></a>
 			</div>
 			
-
 			
-   
+
     	<?php include('footer.php'); ?>
 </div>
 

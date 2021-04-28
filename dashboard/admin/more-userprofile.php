@@ -50,17 +50,16 @@ if(isset($_POST['submit'])){
 		<div class="sidebar-menu">
 	
 			<header class="logo-env">
-			
-			<!-- logo -->
+		
 			<div class="logo">
 				<a href="main.php">
 					<img src="../../images/logo.png" alt="" width="192" height="80" />
 				</a>
 			</div>
 			
-					<!-- logo collapse icon -->
+					
 					<div class="sidebar-collapse" onclick="collapseSidebar()">
-				<a href="#" class="sidebar-collapse-icon with-animation"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition -->
+				<a href="#" class="sidebar-collapse-icon with-animation">
 					<i class="entypo-menu"></i>
 				</a>
 			</div>
@@ -75,13 +74,13 @@ if(isset($_POST['submit'])){
 		
 				<div class="row">
 					
-					<!-- Profile Info and Notifications -->
+					
 					<div class="col-md-6 col-sm-8 clearfix">	
 							
 					</div>
 					
 					
-					<!-- Raw Links -->
+					
 					<div class="col-md-6 col-sm-4 clearfix hidden-xs">
 						
 						<ul class="list-inline links-list pull-right">
@@ -108,9 +107,6 @@ if(isset($_POST['submit'])){
 		
 		<?php $user_id_auth = $_SESSION['user_data']; ?>
 
-		
-		
-		
 		
 		<div class="a1-container a1-small a1-padding-32" style="margin-top:2px; margin-bottom:2px;">
         <div class="a1-card-8 a1-light-gray" style="width:600px; margin:0 auto;">
@@ -149,11 +145,6 @@ if(isset($_POST['submit'])){
     </div>
     </div>   
 		
-		
-		
-		
-		
-
 			<?php include('footer.php'); ?>
 
     	</div>

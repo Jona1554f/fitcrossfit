@@ -189,7 +189,7 @@ if (isset($_POST['name'])) {
                <td height="35"><input type="text" id="boxxe" readonly="" value='<?php echo $streetname?>'></td>
              </tr>
 			 <tr>
-               <td height="35">Departamento:</td>
+               <td height="35">Calle:</td>
                <td height="35"><input type="text" id="boxxe" readonly="" name="state" value='<?php echo $state?>'></td>
              </tr>
 			 <tr>

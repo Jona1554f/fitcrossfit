@@ -118,7 +118,7 @@ page_protect();
                <td height="35"><input type="number" name="zipcode" id="boxx" maxlength="6" required / ></td>
              </tr>
             <tr>
-               <td height="35">DEPARTAMENTO:</td>
+               <td height="35">CALLE:</td>
                <td height="35"><input type="text" name="state" id="boxx" required/ size="30"></td>
              </tr>
             <tr>

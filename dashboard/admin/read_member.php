@@ -105,7 +105,7 @@ page_protect();
 			}
 			?>
 
-		<hr />
+		<hr/>
 
 
 		
